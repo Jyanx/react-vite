@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Git = () => {
     const [search, setSearch] = useState("");
@@ -18,6 +19,9 @@ const Git = () => {
                 <h1>
                     Buscador GitHub
                 </h1>
+                <div>
+                <Link to="/">Inicio</Link>
+                </div>
                 <div className="grid">
                     <input type="text" placeholder="Ingresa usuario" onChange={(e)=>setSearch(e.target.value)} />
                 </div>

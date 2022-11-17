@@ -4,6 +4,19 @@
   padding: 2rem;
   text-align: center;
 }
+.letra{
+  background-color: red;
+}
+.btn{
+  color:"#000";
+}
+.verde{
+  background-color: green;
+}
+
+.azul{
+  background-color: blue;
+}
 
 .logo {
   height: 6em;
@@ -38,4 +51,18 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.img-pokemon{
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: contain !important;
+  margin-top: 25px;
+}
+
+.card-pokemon {
+  max-width: 300px;
+  min-height: 400px;
+  max-height: 400px;
+  
 }
