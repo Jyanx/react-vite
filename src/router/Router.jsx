@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import App from "../App"
-import Git from "../gitSearch/git"
+import Git from "../gitSearch/Git"
 import Ejemplo from "../Ejemplo"
 import Home from "../pages/Pokemon"
 import Flags from "../pages/Flags"
