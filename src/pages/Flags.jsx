@@ -1,5 +1,5 @@
 import React from "react";
-import { getDataFromPokemon } from "../Service/Index";
+import { getDataFromPokemon } from "../Service/index";
 import { useEffect, useState } from "react";
 import {
     Card,

@@ -1,10 +1,22 @@
-const inputImg = ()=>{
-    return(
+import { useState } from "react"
+import PintadoImg from "./pintadoImg"
+
+
+const InputImg = () => {
+    const [valorInput, setValorInput] = useState("aviones")
+    const captura = (e) => {
+        e.preventDefault()
+        let input = document.querySelector("input")
+        setValorInput(input.value)
+    }
+    return (
         <div>
             <form action="">
                 <input type="text" />
-                <button>Buscar</button>
+                <button onClick={captura}>Buscar</button>
             </form>
+            <PintadoImg valor={valorInput} />
         </div>
     )
 }
+export default InputImg;

@@ -1,25 +1,42 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import App from "../App"
-import Git from "../gitSearch/Git"
 import Ejemplo from "../Ejemplo"
+import Header from "../Componentes/Header"
+import Git from "../gitSearch/Git"
 import Home from "../pages/Pokemon"
 import Flags from "../pages/Flags"
+import PrincipalImg from "../imagenes-pixabay/components/principaImg"
+import Private from "../private"
+import Login from "../pages/Login"
 
-const Router =()=>{
-    return(
+
+
+
+const Router = () => {
+    return (
+
+
         <BrowserRouter>
+            <Header/>
+            <Routes>
+                <Route path="/" element={<Login />} />
 
-        {/*Aqui colocamos las rutas */}
-        <Routes>
-            <Route path="/" element={<App/>} />
-            <Route path="/home" element={<Home/>} />
-            <Route path="/flags" element={<Flags/>} />
-            <Route path="/buscador" element={<Git/>} />
-            <Route path="/ejemplo" element={<Ejemplo/>} />
-            <Route path="/nosotros" element={<Git/>}/>
-        </Routes>
+
+                {/* Rutas privadas */}
+                <Route element={<Private />}>
+                    <Route path="/git" element={<Git />} />
+                    <Route path="/pokemon" element={<Home />} />
+                    <Route path="/banderas" element={<Flags />} />
+                    <Route path="/ejemplo" element={<Ejemplo />} />
+                    <Route path="/imagen" element={<PrincipalImg />} />
+                </Route>
+
+            </Routes>
+
         </BrowserRouter>
+
+
     )
 }
 
-export default Router
+export default Router;

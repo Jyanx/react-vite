@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+ text-align: center;
 }
 .letra{
   background-color: red;
@@ -17,7 +17,21 @@
 .azul{
   background-color: blue;
 }
+.header{
+  border-radius: 10px;
+ width: 100%;
+ margin: 0;
 
+}
+.login{
+  background-color: rgb(25,25 , 25);
+  border-radius: 20px;
+  padding: 20px;
+}
+.content{
+  border-radius: 20px;
+  padding: 20px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
